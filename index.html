@@ -1,11 +1,80 @@
+<!-- HTML - Name: portal_page.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jacob's Tech Life</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/portal_page.css">
 </head>
-<body>
-    <a href="portal_page/portal_page.html">Portal Page</a>
+<body id="top">
+<header>
+    <img src="images/techworld.png" alt="Tech World logo">
+    <h1>Jacob's Tech Life</h1>
+</header>
+<nav>
+    <a href="portal_page.html">Home</a>
+    <a href="../wwr/index.html">WWR</a>
+    <a href="ice.html">ICE</a>
+    <a href="../aboutme.html">About Me</a>
+</nav>
+<main>
+    <section>
+        <h2>Welcome</h2>
+        <p>
+            Welcome to my portal page. This is where I will organize my course work,
+            projects, and helpful resources as I learn web development.
+        </p>
+         <img src="images/byui_hero.png" alt="BYU-Idaho student tech workspace" class="hero">
+    </section>
+    <section>
+        <h2>Course Resources</h2>
+        <ul>
+            <li><a href="#">Canvas</a></li>
+            <li><a href="#">WDD130 Homepage</a></li>
+            <li><a href="#">MDN Web Docs</a></li>
+            <li><a href="#">W3Schools</a></li>
+        </ul>
+        <p>More resources will be added throughout the semester.</p>
+    </section>
+    <section>
+        <h2>Weekly Schedule</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Focus</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Assignments</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Projects</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Study / Review</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2>Contact Me</h2>
+        <form>
+            <label>Name:</label><br>
+            <input type="text"><br><br>
+            <label>Email:</label><br>
+            <input type="email"><br><br>
+            <label>Message:</label><br>
+            <textarea rows="4" cols="40"></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 Jacob Lewis</p>
+    <a href="#top">Back to top</a>
+</footer>
 </body>
 </html>
