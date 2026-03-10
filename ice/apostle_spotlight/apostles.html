@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apostles Spotlights</title>
+
+  <style>
+    /* BACKGROUND WRAPPER FOR EVERYTHING */
+    .images {
+      background-image: url("images/christus.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px;
+
+      /* optional: helps text readability */
+      border-radius: 20px;
+    }
+
+    /* OPTIONAL: dark overlay so headings are readable on the photo */
+    .overlay {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 30px;
+      border-radius: 16px;
+
+      display: grid;
+      gap: 50px; /* space between the 2 groups */
+    }
+
+    h1 {
+      color: white;
+      margin: 0 0 15px;
+      text-align: center;
+    }
+
+    /* 1st presidency grid (3 columns) */
+    .first {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+    .first h1 {
+      grid-column: 1 / -1; /* make the title span across all columns */
+    }
+
+    /* 12 apostles grid (4 columns, wraps into rows) */
+    .twelve {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+    .twelve h1 {
+      grid-column: 1 / -1;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="images">
+    <div class="overlay">
+
+      <div class="first">
+        <h1>First Presidency</h1>
+        <img class="logo" src="images/eyring.webp" alt="Eyring">
+        <img class="logo" src="images/oaks.webp" alt="Oaks">
+        <img class="logo" src="images/christofferson.webp" alt="Christofferson">
+      </div>
+
+      <div class="twelve">
+        <h1>Quorum of the Twelve Apostles</h1>
+        <img class="logo" src="images/holland.webp" alt="Holland">
+        <img class="logo" src="images/uchtdorf.webp" alt="Uchtdorf">
+        <img class="logo" src="images/bednar.webp" alt="Bednar">
+        <img class="logo" src="images/cook.webp" alt="Cook">
+        <img class="logo" src="images/anderson.webp" alt="Andersen">
+        <img class="logo" src="images/rasband.webp" alt="Rasband">
+        <img class="logo" src="images/stevenson.webp" alt="Stevenson">
+        <img class="logo" src="images/renlund.webp" alt="Renlund">
+        <img class="logo" src="images/gong.webp" alt="Gong">
+        <img class="logo" src="images/soares.webp" alt="Soares">
+        <img class="logo" src="images/kearon.webp" alt="Kearon">
+        <img class="logo" src="images/causse.webp" alt="Causse">
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
